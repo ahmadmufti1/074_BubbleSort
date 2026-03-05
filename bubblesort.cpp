@@ -6,7 +6,7 @@ int arr[20]; // Deklarasi array untuk menyimpan elemen-elemen yang akan diurutka
 int n; // Deklarasi variabel untuk menyimpan jumlah elemen dalam array
 
 // Fungsi untuk menerima input dari pengguna
-void input ()
+void input()
 {
     int d;
     while (true)
@@ -31,3 +31,36 @@ void input ()
         cin >> arr[i]; // Menyimpan input elemen ke dalam array pada indeks i
     }
 }
+
+void BubbleSort()
+{
+    int pass = 1;//step 1
+
+    do
+    {
+        for (int j = 0; j <= n - pass; j++)
+        {//step 2
+            if (arr[j] > arr[j + 1]) // Membandingkan elemen saat ini dengan elemen berikutnya
+            {//step 3
+                int temp;
+                temp = arr[j]; // Menyimpan elemen saat ini ke dalam variabel sementara
+                arr[j] = arr[j + 1]; // Menempatkan elemen berikutnya ke posisi elemen saat ini
+                arr[j + 1] = temp; // Menempatkan elemen sementara ke posisi elemen berikutnya
+            }
+        }
+        pass += 1;//step4
+
+        cout << "\nPass " << pass - 1 << ": "; //Number Of Pass
+        for (int k = 0; k < n; k++)
+        {
+            cout << arr[k] << " "; // Menampilkan elemen array setelah setiap pass
+        }
+        cout << endl; 
+    }while (pass <= n-1);
+    {
+        /* code */
+    }
+    
+    
+}
+
