@@ -64,3 +64,25 @@ void BubbleSort()
     
 }
 
+void display()
+{
+    cout << endl;
+    cout << "===============" << endl;
+    cout << "Element Array Yang telah tersusun" << endl;
+    cout << "===============" << endl;
+    cout << endl;
+    for (int j = 0; j < n; j++)
+    {
+        cout << arr[j] << " "; // Menampilkan elemen array yang telah diurutkan
+        if(j < n -1)
+        {
+            cout << "-->";
+        }
+    }
+    cout << endl;
+    cout << endl;
+    
+    cout << "Jumlah pass = " << n-1 << endl;
+    cout << endl;
+    cout << endl;
+}
