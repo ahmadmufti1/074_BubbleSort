@@ -86,3 +86,14 @@ void display()
     cout << endl;
     cout << endl;
 }
+
+int main()
+{
+    input(); // Memanggil fungsi untuk menerima input dari pengguna
+
+    BubbleSort(); // Memanggil fungsi untuk mengurutkan array menggunakan bubble sort
+    display(); // Memanggil fungsi untuk menampilkan hasil pengurutan
+
+    system("pause");
+    return 0;
+}
